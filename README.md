@@ -50,9 +50,9 @@ asked. The description was written for the wrong phrasing. Say what you asked
 and what you expected, and it gets fixed — that feedback is more valuable than
 working around it.
 
-**What is actually built** is the Done section of [BACKLOG.md](BACKLOG.md).
-Everything under Queue is planned and does not exist yet. The daily loop builds
-one item a day; the table above is the intended shape, not the current state.
+**What is actually built** is listed under Contents below and in the Done
+section of [BACKLOG.md](BACKLOG.md). Everything under Queue is planned and does
+not exist yet.
 
 ## Layout
 
@@ -71,23 +71,16 @@ examples/
 
 See [BACKLOG.md](BACKLOG.md). The first unchecked item is the one being built.
 
-## Planned contents
+## Contents
 
-Nothing here is built yet. This table is the intended shape, and the daily loop
-fills it in one item at a time.
+| Skill | What it does |
+| --- | --- |
+| [de-ai-slop-ui](skills/de-ai-slop-ui) | Find and remove the thirty visual and copy tells that mark a page as machine-made. |
 
-| # | Skill | What it does |
-| --- | --- | --- |
-| 001 | [build-keremozdemir-site](skills/build-keremozdemir-site) | Build Kerem's own site with this repository's skills — the honest test of the pack. |
-| 002 | [structure-before-style](skills/structure-before-style) | Decide what a page is for and what it must say before anything is designed. |
-| 003 | [type-and-scale](skills/type-and-scale) | Choose a typeface and a modular scale on stated grounds. |
-| 004 | [content-first-copy](skills/content-first-copy) | Write the words before the layout, because a hero section written to fill a shape says nothing. |
-| 005 | [portfolio-section](skills/portfolio-section) | Generate a repositories or work section from a real source — the GitHub API, a data file — with a stated refresh path, so it cannot silently go stale. |
-| 006 | [responsive-without-breakpoint-soup](skills/responsive-without-breakpoint-soup) | Layout that adapts on content rather than on a list of device widths. |
-| 007 | [ship-checklist](skills/ship-checklist) | The technical pass before publishing: title and meta description, og:image, canonical, sitemap, robots, 404, html lang, alt text, no console errors, no leftover framework defaults. |
-| 008 | [accessibility-pass](skills/accessibility-pass) | Contrast, focus order, keyboard traps, motion preferences. |
-| 009 | [performance-budget](skills/performance-budget) | State a budget in kilobytes and milliseconds before building, then hold to it. |
+These arrived already written and in daily use, rather than being built against the queue below — which is why most carry no item number. Some have Turkish bodies: they were written in the language they are used in, and translating them is a queue item rather than a blocker.
 
+Everything still under Queue in [BACKLOG.md](BACKLOG.md) does not exist
+yet. The daily loop builds one item a day.
 ## Licence
 
 MIT. See [LICENSE](LICENSE).
