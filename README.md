@@ -8,12 +8,15 @@ anonymous, and anonymity is the one thing a personal or professional site cannot
 afford.
 
 This repository holds the agents and skills for building sites that read as
-deliberate — structure decided before layout, type chosen before colour, content
-written before it is arranged — and the technical checks that decide whether the
-result is findable, shareable and fast.
+deliberate. What is built today is the pass that finds the tells and replaces
+each one with a choice somebody actually made. The order the rest of it rests on
+— structure decided before layout, type chosen before colour, content written
+before it is arranged — and the technical checks that decide whether the result
+is findable, shareable and fast are queued in [BACKLOG.md](BACKLOG.md) and do not
+exist yet.
 
-The first thing built with it is Kerem's own site, which is also the honest test
-of whether the pack works.
+The first thing to be built with it will be Kerem's own site, which is also the
+honest test of whether the pack works. It is the first item in the queue.
 
 ## What this is not
 
@@ -38,8 +41,8 @@ bash ~/Desktop/agent/_setup/sync-skills.sh
 ```
 
 That clones every agent repository and links its `skills/` into `~/.claude/skills`,
-so they are available in every session and every folder. Re-run it whenever the
-daily loop ships something new — it pulls rather than re-clones.
+so they are available in every session and every folder. Re-run it whenever one of
+these repositories ships something new — it pulls rather than re-clones.
 
 Then simply ask. Each skill's `description` frontmatter is written to match how
 the request actually gets phrased, in English or Turkish, so you do not name the
@@ -67,6 +70,8 @@ examples/
   <name>/             worked example on real input, with the output committed
 ```
 
+`agents/` and `examples/` are empty so far.
+
 ## Roadmap
 
 See [BACKLOG.md](BACKLOG.md). The first unchecked item is the one being built.
@@ -76,11 +81,12 @@ See [BACKLOG.md](BACKLOG.md). The first unchecked item is the one being built.
 | Skill | What it does |
 | --- | --- |
 | [de-ai-slop-ui](skills/de-ai-slop-ui) | Find and remove the thirty visual and copy tells that mark a page as machine-made. |
+| [scroll-motion-stack](skills/scroll-motion-stack) | The stack behind scroll-driven sites: GSAP ScrollTrigger with Lenis, the pre-rendered image sequence that fakes an Apple-style scroll-zoom, preloaders, and the mobile performance failures that make clones feel cheap. |
 
 These arrived already written and in daily use, rather than being built against the queue below — which is why most carry no item number. Some have Turkish bodies: they were written in the language they are used in, and translating them is a queue item rather than a blocker.
 
 Everything still under Queue in [BACKLOG.md](BACKLOG.md) does not exist
-yet. The daily loop builds one item a day.
+yet.
 ## Licence
 
 MIT. See [LICENSE](LICENSE).
