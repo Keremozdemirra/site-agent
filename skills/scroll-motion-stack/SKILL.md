@@ -1,6 +1,6 @@
 ---
 name: scroll-motion-stack
-description: The stack and the patterns behind Awwwards-tier scroll sites - GSAP ScrollTrigger plus Lenis for pinning, scrubbing and staggered reveals, the pre-rendered image-sequence trick that fakes Apple-style 3D scroll-zoom at 60fps, Three.js vs Spline as a decision rather than a default, cinematic preloaders, one-accent/one-easing direction, and the mobile performance failures that make clones feel cheap. Use when the ask is a scroll-driven, cinematic or 3D-feeling website: "scroll animasyonu", "sayfa kaydırınca değişsin", "Apple gibi zoom", "3D hero", "sinematik giriş", "loader ekle", "site premium dursun", "Awwwards tarzı", "smooth scroll kur", "scroll storytelling", "pin this section", "make the hero feel expensive". Also use before shipping any scroll-heavy page, for the performance pass. Not for UI micro-motion - use animate for that; not for the AI-slop visual tells - use de-ai-slop-ui.
+description: Builds scroll-driven sites on the Lenis + GSAP ScrollTrigger + Three.js stack: pinned sections, scrubbed timelines, a scroll-linked 3D hero, and the performance pass that keeps it at 60fps on a laptop. Use for a scroll-driven, cinematic or 3D-feeling website — "scroll animasyonu", "sayfa kaydirinca degissin", "Apple gibi zoom", "sinematik giris", "site premium dursun", "Awwwards tarzi", "scroll storytelling", "make the hero feel expensive" — and before shipping any scroll-heavy page. Not for UI micro-motion (use animate) or the AI-slop visual tells (use de-ai-slop-ui).
 ---
 
 # Scroll-driven site stack
