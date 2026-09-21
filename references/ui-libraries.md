@@ -52,9 +52,20 @@ owner ironcoding.net, shared 2026-09-14, read 2026-09-21):
 2. https://www.ls.graphics/ (mockups and design assets)
 3. https://pikaicons.com/ (icon set)
 
-## Two portfolio code archives on Drive
+## Two portfolio code archives on Drive, read 2026-09-21
 
-"Portfolio 2 website code.zip" (3.2 MB) and "portofolio-main.zip" (5.2 MB),
-both shared by chiragdeepsingh88@gmail.com on 2026-09-14. Third-party code with
-no licence seen: if opened, it stays local and nothing from it is copied into a
-public repository.
+Both shared by chiragdeepsingh88@gmail.com on 2026-09-14, downloaded to
+`~/agents/vendor/portfolio-zips/` and unpacked there. Neither carries a licence,
+so both are reference only: patterns may be studied, code is never copied into
+the site or any public repository.
+
+1. `portfolio-2-website-code.zip` (3.2 MB): "Unifex", a digital agency and
+   creative portfolio HTML template (static HTML, CSS, GSAP bundle, Bootstrap).
+   A commercial theme by its title; treat it as someone else's licensed product.
+   Static scan: seven pattern hits, all on minified libraries, a base64 image in
+   the CSS and HTML comments; nothing hostile.
+2. `portofolio-main.zip` (5.2 MB): a Vite, React, react-three-fiber, rapier,
+   GSAP, motion, Tailwind and Firebase portfolio. Worth reading for how the 3D
+   hero and GSAP timelines are wired, the same stack as keremozdemir.de/world.
+   Static scan: 36 known-vulnerable pinned packages in its lockfile (OSV), so
+   never `npm install` it as is; a Firebase web config is present in the source, so the author's project id is in there as well.
