@@ -115,3 +115,10 @@ If the project has a broader design skill available (`frontend-design`,
 `canvas-design`, `dataviz` for charts), use it alongside this one: this skill is
 subtractive (it removes what marks the page as machine-made) while those are
 generative. Both directions are usually needed.
+
+## Component and motion sources
+
+Before writing a component, background, loader or scroll effect by hand, read
+`~/agents/site-agent/references/ui-libraries.md`: the libraries Kerem has chosen,
+the Lenis, GSAP and React Bits stack, and the design resource sites. Check the
+licence on the library's own page before shipping anything from it.

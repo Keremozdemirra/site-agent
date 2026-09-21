@@ -187,3 +187,10 @@ contact, password visibility toggle, UTM tracking on campaign links.
 Name the exact libraries. "Add cool animation" produces generic output; "set up
 Lenis smooth scroll and a GSAP ScrollTrigger timeline that pins `.hero` for 2000px
 and staggers `.feature-cards` as it unpins" produces the thing you asked for.
+
+## Component and motion sources
+
+Before writing a component, background, loader or scroll effect by hand, read
+`~/agents/site-agent/references/ui-libraries.md`: the libraries Kerem has chosen,
+the Lenis, GSAP and React Bits stack, and the design resource sites. Check the
+licence on the library's own page before shipping anything from it.
