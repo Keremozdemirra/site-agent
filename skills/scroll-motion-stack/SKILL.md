@@ -1,6 +1,6 @@
 ---
 name: scroll-motion-stack
-description: Builds scroll-driven sites on the Lenis + GSAP ScrollTrigger + Three.js stack: pinned sections, scrubbed timelines, a scroll-linked 3D hero, and the performance pass that keeps it at 60fps on a laptop. Use for a scroll-driven, cinematic or 3D-feeling website — "scroll animasyonu", "sayfa kaydirinca degissin", "Apple gibi zoom", "sinematik giris", "site premium dursun", "Awwwards tarzi", "scroll storytelling", "make the hero feel expensive" — and before shipping any scroll-heavy page. Not for UI micro-motion (use animate) or the AI-slop visual tells (use de-ai-slop-ui).
+description: Builds scroll-driven sites on the Lenis + GSAP ScrollTrigger + Three.js stack: pinned sections, scrubbed timelines, a scroll-linked 3D hero, and the performance pass that keeps it at 60fps on a laptop. Use for a scroll-driven, cinematic or 3D-feeling website ("scroll animasyonu", "sayfa kaydirinca degissin", "Apple gibi zoom", "sinematik giris", "site premium dursun", "Awwwards tarzi", "scroll storytelling", "make the hero feel expensive") and before shipping any scroll-heavy page. Not for UI micro-motion (use animate) or the AI-slop visual tells (use de-ai-slop-ui).
 ---
 
 # Scroll-driven site stack
@@ -17,20 +17,20 @@ This skill covers the scroll layer. Component-level motion belongs to `animate`.
 | Smooth scroll | Lenis | Always, alongside GSAP - it gives ScrollTrigger a clean scroll value |
 | Real-time 3D | Three.js | The scene reacts to input or data: particles, shaders, generative geometry |
 | Designed 3D | Spline | The scene is static or lightly interactive and you want to light it by eye |
-| 3D keyframing | Theatre.js | You need a GUI to direct a Three.js scene instead of hardcoding values |
+| 3D keyframing | Theatre.js | You want a GUI to direct a Three.js scene, with no hand-typed values |
 
 Default to GSAP + Lenis only. Add a 3D layer **only when the brief requires it**,
 and say so in one line before you add it. Most "3D" scroll effects on award sites
 are not 3D at all - see the image-sequence section below.
 
 Rule of thumb: "rotating object in the hero" → Spline. "particles that follow the
-cursor" → Three.js. "product that rotates as I scroll" → image sequence, not 3D.
+cursor" → Three.js. "product that rotates as I scroll" → image sequence; 3D is the wrong tool for it.
 
 ## The three scroll patterns
 
 - **Pinning** - element stays fixed while the page scrolls past it, so its internal
   animation plays out fully before releasing.
-- **Scrubbing** - animation progress is tied to scroll position, not to a duration.
+- **Scrubbing** - animation progress is tied to scroll position; a duration plays no part.
   Scroll up and it reverses.
 - **Staggered reveal** - groups of elements animate in with a delay between each.
 
@@ -126,7 +126,7 @@ const interval = setInterval(() => {
 }, 120);
 ```
 
-## Direction, not decoration
+## Direction first
 
 What separates an award site from a 3D demo is that every decision points the same
 way. Enforce these four:
@@ -158,13 +158,13 @@ This is where clones die, and it is not optional.
 **Jank**
 - Animate `transform` and `opacity`. Animating `top`/`left`/`width` forces layout
   every frame.
-- Batch related animations into one timeline instead of many ScrollTrigger instances.
+- Batch related animations into one timeline; many ScrollTrigger instances cost more than one.
 - `will-change: transform` on heavily animated elements, so they get a GPU layer.
 
 **Verify**
-- Lighthouse on **mobile**, not desktop.
+- Lighthouse on **mobile**; the desktop score says little here.
 - LCP under 2.5s, CLS near 0.
-- Test on a real mid-range phone, not the dev machine.
+- Test on a real mid-range phone; the dev machine hides the cost.
 - Drive the built page with the Playwright MCP: screenshot it, click every control,
   scroll the full page, and fix what breaks.
 
