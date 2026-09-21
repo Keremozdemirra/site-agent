@@ -68,4 +68,4 @@ the site or any public repository.
    GSAP, motion, Tailwind and Firebase portfolio. Worth reading for how the 3D
    hero and GSAP timelines are wired, the same stack as keremozdemir.de/world.
    Static scan: 36 known-vulnerable pinned packages in its lockfile (OSV), so
-   never `npm install` it as is; a Firebase web config is present in the source, so the author's project id is in there as well.
+   do not run `npm install` on it as it stands; a Firebase web config is present in the source, so the author's project id is in there as well.
