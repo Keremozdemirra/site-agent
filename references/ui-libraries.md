@@ -55,7 +55,7 @@ owner ironcoding.net, shared 2026-09-14, read 2026-09-21):
 ## Two portfolio code archives on Drive, read 2026-09-21
 
 Both shared by chiragdeepsingh88@gmail.com on 2026-09-14, downloaded to
-`~/agents/vendor/portfolio-zips/` and unpacked there. Neither carries a licence,
+`~/agents/vendor/portfolio-zips/` and extracted there. Neither carries a licence,
 so both are reference only: patterns may be studied, code is never copied into
 the site or any public repository.
 
