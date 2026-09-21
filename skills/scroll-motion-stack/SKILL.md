@@ -103,8 +103,8 @@ Preload the frames before the section enters, or the first scrub will stutter.
 
 ## Cinematic intro loaders
 
-The first 2-3 seconds set the tone. A preloader is a first-impression device, not
-a loading indicator. Four that work: a 0→100 progress counter, an SVG logo that
+The first 2-3 seconds set the tone. A preloader is a first-impression device; its job is the
+first impression, and the loading it hides is beside the point. Four that work: a 0→100 progress counter, an SVG logo that
 draws itself, a color panel that wipes away, a text-scramble headline.
 
 Hold the loader for a **minimum** ~2s even when assets are already there - a
@@ -170,8 +170,7 @@ This is where clones die, and it is not optional.
 
 ## Ship checklist
 
-Small additions that separate a finished site from a demo. Add what the site needs,
-not all of them.
+Small additions that separate a finished site from a demo. Add only what the site needs.
 
 Navigation: sticky header, scroll progress bar, back-to-top button, mobile menu,
 skip-to-content link, site search.
