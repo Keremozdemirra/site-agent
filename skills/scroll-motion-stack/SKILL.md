@@ -190,6 +190,10 @@ and staggers `.feature-cards` as it unpins" produces the thing you asked for.
 ## Component and motion sources
 
 Before writing a component, background, loader or scroll effect by hand, read
-`~/agents/site-agent/references/ui-libraries.md`: the libraries Kerem has chosen,
-the Lenis, GSAP and React Bits stack, and the design resource sites. Check the
+`references/ui-libraries.md` at the root of the site-agent repository
+(`../../references/ui-libraries.md` from this skill's folder when it is linked
+from a clone; online at
+https://github.com/Keremozdemirra/site-agent/blob/main/references/ui-libraries.md):
+the libraries this pack recommends, the Lenis, GSAP and React Bits stack, and
+the design resource sites. Check the
 licence on the library's own page before shipping anything from it.

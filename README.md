@@ -15,8 +15,8 @@ before it is arranged — and the technical checks that decide whether the resul
 is findable, shareable and fast are queued in [BACKLOG.md](BACKLOG.md) and do not
 exist yet.
 
-The first thing to be built with it will be Kerem's own site, which is also the
-honest test of whether the pack works. It is the first item in the queue.
+Its first real test is Kerem's own site, now live at
+[keremozdemir.de](https://keremozdemir.de).
 
 ## What this is not
 
@@ -31,18 +31,29 @@ It does not host anything or manage a deployment.
 ## How to use this
 
 These are skills for Claude, not a command-line tool. There is nothing to
-install and nothing to import — you describe the work and the matching skill
+build and nothing to import — you describe the work and the matching skill
 fires on its own.
 
-**In Claude Code or Cowork**, once the skills are on your machine:
+**In Claude Code**, clone the repository and link its skills into the
+folders Claude Code reads (`~/.claude/skills/`):
 
 ```bash
-bash ~/Desktop/agent/_setup/sync-skills.sh
+git clone https://github.com/Keremozdemirra/site-agent ~/agent-packs/site-agent
+cd ~/agent-packs/site-agent
+mkdir -p ~/.claude/skills
+for s in skills/*; do ln -sfn "$PWD/$s" ~/.claude/skills/; done
 ```
 
-That clones every agent repository and links its `skills/` into `~/.claude/skills`,
-so they are available in every session and every folder. Re-run it whenever one of
-these repositories ships something new — it pulls rather than re-clones.
+The links point back into the clone, so `git pull` there brings in whatever
+ships next. To copy the files instead of linking them, replace the
+line starting with `for` with:
+
+```bash
+cp -R skills/* ~/.claude/skills/
+```
+
+Skills placed there are available in every session and every folder; start a
+new session after installing.
 
 Then simply ask. Each skill's `description` frontmatter is written to match how
 the request actually gets phrased, in English or Turkish, so you do not name the
